@@ -113,9 +113,9 @@ class Retriever:
 item = data[8]
 retriever = Retriever()
 result = retriever.retrieve_top_k(item["question"],data)
-print(result)
+#print(result)
 
 
 
-
+print('retrieved!')
 

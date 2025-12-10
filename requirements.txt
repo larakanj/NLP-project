@@ -1,3 +1,6 @@
 mistralai
 python-dotenv
 
+rank_bm25
+nltk
+sentence_transformers
