@@ -73,18 +73,18 @@ It explains why the model predicted correctly or incorrectly based on what evide
 Three prediction files are included to support the ablation study performed in the evaluation section of the coursework.
 
 1. dev_fullwiki_pred.json
-- Main prediction file used in the final evaluation.
-- Generated with **k = 5 retrieved paragraphs**, which is the default setting.
+    - Main prediction file used in the final evaluation.
+    - Generated with **k = 5 retrieved paragraphs**, which is the default setting.
 
 2. dev_fullwiki_pred_k=0.json
-- Prediction file generated with **k = 0**.
-- The model receives *no retrieved evidence* and must rely on minimal context and LLM priors.
-- Used to measure how much retrieval improves performance over a no-evidence baseline.
+    - Prediction file generated with **k = 0**.
+    - The model receives *no retrieved evidence* and must rely on minimal context and LLM priors.
+    - Used to measure how much retrieval improves performance over a no-evidence baseline.
 
 3. dev_fullwiki_pred_k=10.json
-- Prediction file generated with **k = 10 retrieved paragraphs**.
-- Tests whether retrieving more paragraphs improves or harms accuracy.
-- Demonstrates the trade-off between relevant information and retrieval noise.
+    - Prediction file generated with **k = 10 retrieved paragraphs**.
+    - Tests whether retrieving more paragraphs improves or harms accuracy.
+    - Demonstrates the trade-off between relevant information and retrieval noise.
 
 These three files allow comparison across retrieval depths and directly support the ablation study discussed in the report.
 
